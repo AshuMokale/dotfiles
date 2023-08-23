@@ -1,3 +1,3 @@
 require('satoru.options')
 require('satoru.keymaps')
-require('satoru.plugins')
+require('satoru.lazy-nvim')
