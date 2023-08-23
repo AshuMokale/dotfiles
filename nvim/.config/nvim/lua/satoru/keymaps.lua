@@ -31,7 +31,7 @@ set('n', '<leader>sv', ':vsplit<CR>', opts) -- Split right
 -- Buffer keypams
 set('n', '<Tab>', ':bNext<CR>', opts) -- Next buffer
 set('n', '<S-Tab>', ':bprevious<CR>', opts) -- Previous buffer
-set('n', '<C-w>', ':bNext<CR>', opts) -- Close buffer
+set('n', '<C-w>', ':bdelete<CR>', opts) -- Close buffer
 set('n', '<C-q>', ':close<CR>', opts) -- Close window
 
 -- Terminal keymaps
