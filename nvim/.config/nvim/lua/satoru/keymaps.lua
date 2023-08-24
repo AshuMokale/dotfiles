@@ -15,6 +15,10 @@ set('n', '<C-s>', ':w<CR>', opts) -- Save file
 set('n', '<C-x>', ':so %<CR>', opts) -- Source file
 set('n', '<leader>e', ':Ex<CR>', opts) -- Open file manager
 
+-- Comment
+set('n', '<C-c>', ':CommentToggle<CR>', opts) -- Comment line
+set('v', '<C-c>', ':CommentToggle<CR>', opts) -- Comment selection
+
 -- Clear highlights
 set('n', '<leader>nh', ':nohl<CR>', opts)
 

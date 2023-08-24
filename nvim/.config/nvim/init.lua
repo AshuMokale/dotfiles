@@ -1,7 +1,6 @@
 require('satoru.options')
 require('satoru.keymaps')
 
-
 -- Lazy nvim packager manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -20,5 +19,6 @@ require('lazy').setup('satoru.plugins')
 
 -- Plugin Config files
 require('satoru.nvim-comment')
+
 -- Theme
 vim.cmd[[colorscheme rose-pine-moon]]
