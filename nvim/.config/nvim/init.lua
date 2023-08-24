@@ -18,5 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup('satoru.plugins')
 
+-- Plugin Config files
+require('satoru.nvim-comment')
 -- Theme
 vim.cmd[[colorscheme rose-pine-moon]]
