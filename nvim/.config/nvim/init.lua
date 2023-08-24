@@ -21,6 +21,7 @@ require('lazy').setup('satoru.plugins')
 require('satoru.nvim-comment')
 require('satoru.telescope')
 require('satoru.treesitter')
+require('satoru.lualine')
 
 -- Theme
 vim.cmd[[colorscheme rose-pine-moon]]
