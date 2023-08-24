@@ -1,3 +1,3 @@
-require('lazy').setup({
+return {
   { 'rose-pine/neovim', name = 'rose-pine' },
-})
+}
