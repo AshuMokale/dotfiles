@@ -20,6 +20,7 @@ require('lazy').setup('satoru.plugins')
 -- Plugin Config files
 require('satoru.nvim-comment')
 require('satoru.telescope')
+require('satoru.treesitter')
 
 -- Theme
 vim.cmd[[colorscheme rose-pine-moon]]
