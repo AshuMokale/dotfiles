@@ -38,12 +38,5 @@ set('n', '<S-Tab>', ':bprevious<CR>', opts) -- Previous buffer
 set('n', '<C-w>', ':bdelete<CR>', opts) -- Close buffer
 set('n', '<C-q>', ':close<CR>', opts) -- Close window
 
--- Telescope Keymaps
-local builtin = require('telescope.builtin')
-set('n', '<C-p>', builtin.find_files, {})
-set('n', '<leader>fg', builtin.live_grep, {})
-set('n', '<leader>fb', builtin.buffers, {})
-set('n', '<leader>fh', builtin.help_tags, {})
-
 -- Terminal keymaps
 set('t', '<C-w>', 'exit<CR><CR>', opts) -- Close terminal
