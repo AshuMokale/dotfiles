@@ -17,3 +17,4 @@ opt.backup = false
 opt.splitbelow = true
 opt.splitright = true
 opt.termguicolors = true
+opt.swapfile = false
