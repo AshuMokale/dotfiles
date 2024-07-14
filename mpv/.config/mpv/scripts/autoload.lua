@@ -219,3 +219,4 @@ function find_and_add_entries()
 end
 
 mp.register_event("start-file", find_and_add_entries)
+

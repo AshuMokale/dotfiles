@@ -2221,3 +2221,4 @@ for i = 1, #o.open_list_keybind do
 		mp.add_forced_key_binding(o.open_list_keybind[i][1], 'open-list'..i, function()display_list(o.open_list_keybind[i][2]) end)
 	end
 end
+
