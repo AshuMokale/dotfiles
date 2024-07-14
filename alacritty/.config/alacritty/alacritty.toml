@@ -1,0 +1,20 @@
+import = ["/home/satoru/.config/alacritty/rose-pine-moon.toml"]
+# import = ["/home/satoru/.config/alacritty/dracula.toml"]
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[window]
+decorations = "full"
+
+[window.dimensions]
+columns = 100
+lines = 30
+
+[window.padding]
+x = 7
+y = 7
