@@ -1,42 +1,20 @@
--- Shorten API
+-- Set leader key
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 local set = vim.keymap.set
 
--- Map Leader
-vim.g.mapleader = ' '
+-- Keymaps
+set('n', '<C-s>', '<cmd>w<CR>') -- Save file
+set('n', '<ESC>', '<cmd>nohlsearch<CR>') -- Clear highlights
+set('i', 'jk', '<ESC>') -- Switch to normal mode
+set('n', '<C-w>', '<cmd>bdelete<CR>') -- Close current buffer
+set('n', '<C-q>', '<cmd>close<CR>') -- Close current window
+set('n', '<Tab>', '<cmd>bnext<CR>') -- Close current buffer
+set('n', '<S-Tab>', '<cmd>bprevious<CR>') -- Close current buffer
+set('n', '<leader>e', '<cmd>Lexplore<CR>') -- Open file explorer
+set('n', '<C-h>', '<C-w><C-h>') -- move to left window
+set('n', '<C-j>', '<C-w><C-j>') -- move to below window
+set('n', '<C-k>', '<C-w><C-k>') -- move to above window
+set('n', '<C-l>', '<C-w><C-l>') -- move to right window
 
--- Noreamps and Silent
-local opts = { noremap = true, silent = true }
-
--- Quick normal mode
-set('i', 'jk', '<ESC>', opts)
-
--- File keymaps
-set('n', '<C-s>', ':w<CR>', opts) -- Save file
-set('n', '<C-x>', ':so %<CR>', opts) -- Source file
-set('n', '<leader>e', ':Ex<CR>', opts) -- Open file manager
-
--- Comment
-set('n', '<C-c>', ':CommentToggle<CR>', opts) -- Comment line
-set('v', '<C-c>', ':CommentToggle<CR>', opts) -- Comment selection
-
--- Clear highlights
-set('n', '<leader>nh', ':nohl<CR>', opts)
-
--- Navigation keymaps
-set('n', '<C-h>', '<C-w>h', opts) -- Switch to left window
-set('n', '<C-j>', '<C-w>j', opts) -- Switch to down window
-set('n', '<C-k>', '<C-w>k', opts) -- Switch to up window
-set('n', '<C-l>', '<C-w>l', opts) -- Switch to right window
-
--- Split keymaps
-set('n', '<leader>sb', ':split<CR>', opts) -- Split below
-set('n', '<leader>sv', ':vsplit<CR>', opts) -- Split right
-
--- Buffer keypams
-set('n', '<Tab>', ':bNext<CR>', opts) -- Next buffer
-set('n', '<S-Tab>', ':bprevious<CR>', opts) -- Previous buffer
-set('n', '<C-w>', ':bdelete<CR>', opts) -- Close buffer
-set('n', '<C-q>', ':close<CR>', opts) -- Close window
-
--- Terminal keymaps
-set('t', '<C-w>', 'exit<CR><CR>', opts) -- Close terminal
