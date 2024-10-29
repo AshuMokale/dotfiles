@@ -41,6 +41,12 @@ require("lazy").setup({
 			config = true,
 			opts = { enable_check_bracket_line = false },
 		},
+		{ "neovim/nvim-lspconfig" },
+		{
+			"hrsh7th/cmp-nvim-lsp",
+			dependencies = { "hrsh7th/nvim-cmp" },
+			event = "InsertEnter"
+		},
 	},
 	-- automatically check for plugin updates
 	checker = { enabled = true },
