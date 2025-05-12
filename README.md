@@ -1,2 +1,2 @@
 # dotfiles
-Config files for applications.
+Config files for applications based on Debian(Bookworm).
