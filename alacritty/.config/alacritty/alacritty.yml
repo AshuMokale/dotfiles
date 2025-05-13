@@ -1,6 +1,6 @@
 import:
-  - /home/satoru/.config/alacritty/gruvbox.yml
-  # - /home/satoru/.config/alacritty/dracula.yml
+  # - /home/satoru/.config/alacritty/gruvbox.yml
+  - /home/satoru/.config/alacritty/dracula.yml
 
 window:
   dimensions:
