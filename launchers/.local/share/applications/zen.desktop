@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Zen
+Comment=Zen Browser, focused on privacy & security
+Exec=zen %U
+Icon=zen
+Actions=private;
+
+[Desktop Action private]
+Name=New Private Window
+Exec=zen --private-window

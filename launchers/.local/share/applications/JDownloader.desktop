@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=JDownloader
+Comment=Download Manager written in Java
+Exec=/opt/jdk-21/bin/java -jar /opt/JDownloader/JDownloader.jar
+Icon=JDownloader
+StartupWMClass=org-jdownloader-update-launcher-JDLauncher
