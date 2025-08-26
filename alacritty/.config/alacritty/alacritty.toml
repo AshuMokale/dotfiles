@@ -5,7 +5,7 @@ import = ["~/.config/alacritty/dracula.toml"]
 decorations = "none"
 dimensions = { columns = 92, lines = 28 }
 padding = { x = 5, y = 5 }
-# dynamic_padding = true
+dynamic_padding = true
 
 
 [font]
