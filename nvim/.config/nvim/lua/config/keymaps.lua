@@ -24,11 +24,14 @@ local ls = require("luasnip")
 key.set("i", "<C-K>", function()
 	ls.expand()
 end, { silent = true })
-key.set({ "i", "s" }, "<C-L>", function()
+key.set({ "i", "s" }, "<Tab>", function()
 	ls.jump(1)
 end, { silent = true })
-key.set({ "i", "s" }, "<C-J>", function()
-	ls.jump(-1)
+key.set({ "i", "s" }, "<S-Tab>", function()
+	if ls.jumpable(-1) then
+		print("Yes")
+		ls.jump(-1)
+	end
 end, { silent = true })
 key.set({ "i", "s" }, "<C-E>", function()
 	if ls.choice_active() then
