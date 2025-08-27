@@ -16,3 +16,6 @@ opt.scrolloff = 10 -- Set 10 lines above the cursor
 opt.smartcase = true -- Disable case sensitive search
 opt.ignorecase = true -- Disable case sensitive search
 -- opt.inccommand = "split" -- Preview changes as you type
+opt.clipboard = "unnamedplus"
+opt.wrap = true
+opt.linebreak = true
