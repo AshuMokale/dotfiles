@@ -18,6 +18,12 @@ key.set("n", "<C-p>", builtin.find_files, { desc = "Telescope find files" })
 key.set("n", "<M-g>", builtin.live_grep, { desc = "Telescope live grep" })
 key.set("n", "<M-b>", builtin.buffers, { desc = "Telescope buffers" })
 key.set("n", "<M-S-h>", builtin.help_tags, { desc = "Telescope help tags" })
+key.set("n", "<M-s>", builtin.builtin, { desc = "[S]earch [S]elect Telescope" })
+key.set("n", "<M-s><M-w>", builtin.grep_string, { desc = "[S]earch current [W]ord" })
+key.set("n", "<M-d>", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
+key.set("n", "<M-r>", builtin.resume, { desc = "[S]earch [R]esume" })
+key.set("n", "<M-o>", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
+key.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 
 -- Snippet(LuaSnip) keymaps
 local ls = require("luasnip")
@@ -38,3 +44,6 @@ key.set({ "i", "s" }, "<C-E>", function()
 		ls.change_choice(1)
 	end
 end, { silent = true })
+
+-- LSP keymaps
+key.set({ "n", "x" }, "gra", vim.lsp.buf.code_action)

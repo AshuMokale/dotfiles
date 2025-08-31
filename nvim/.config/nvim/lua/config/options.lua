@@ -19,3 +19,5 @@ opt.ignorecase = true -- Disable case sensitive search
 opt.clipboard = "unnamedplus"
 opt.wrap = true
 opt.linebreak = true
+opt.hlsearch = false
+opt.incsearch = true
