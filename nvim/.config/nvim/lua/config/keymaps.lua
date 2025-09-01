@@ -5,7 +5,7 @@ local key = vim.keymap
 -- vim.g.maplocalleader = " " -- Already set in config.lazy
 
 key.set("n", "<C-s>", "<cmd>write<CR>") -- Save current file
-key.set("n", "<C-w>", "<cmd>bdelete<CR>") -- Close buffer
+key.set("n", "<C-q>", "<cmd>bdelete<CR>") -- Close buffer
 key.set("n", "<Tab>", "<cmd>bnext<CR>") -- Next buffer
 key.set("n", "<S-Tab>", "<cmd>bprevious<CR>") -- Previous buffer
 key.set("n", "<S-Tab>", "<cmd>bprevious<CR>") -- Previous buffer
@@ -23,7 +23,14 @@ key.set("n", "<M-s><M-w>", builtin.grep_string, { desc = "[S]earch current [W]or
 key.set("n", "<M-d>", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
 key.set("n", "<M-r>", builtin.resume, { desc = "[S]earch [R]esume" })
 key.set("n", "<M-o>", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
-key.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
+
+-- LSP keymaps
+key.set({ "n", "x" }, "gra", vim.lsp.buf.code_action)
+key.set("n", "<leader>D", vim.diagnostic.open_float)
+key.set("n", "gK", function()
+	local new_config = not vim.diagnostic.config().virtual_lines
+	vim.diagnostic.config({ virtual_lines = new_config })
+end, { desc = "Toggle diagnostic virtual_lines" })
 
 -- Snippet(LuaSnip) keymaps
 local ls = require("luasnip")
@@ -44,6 +51,3 @@ key.set({ "i", "s" }, "<C-E>", function()
 		ls.change_choice(1)
 	end
 end, { silent = true })
-
--- LSP keymaps
-key.set({ "n", "x" }, "gra", vim.lsp.buf.code_action)
