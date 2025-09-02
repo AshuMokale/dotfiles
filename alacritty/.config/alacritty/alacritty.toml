@@ -1,21 +1,30 @@
 [general]
-import = ["/home/satoru/.config/alacritty/dracula.toml"]
+import = ["~/.config/alacritty/dracula.toml"]
+
+[window]
+decorations = "none"
+dimensions = { columns = 92, lines = 28 }
+padding = { x = 5, y = 5 }
+dynamic_padding = true
+
 
 [font]
 size = 18.0
 
+[font.bold]
+style = "Bold"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+[font.italic]
+style = "Italic"
+
 [font.normal]
-family = "FiraCode Nerd Font"
+family = "FiraCode Nerd Font Propo"
 style = "Regular"
 
-[window]
-decorations = "full"
-
-[window.dimensions]
-columns = 86
-lines = 28
-
-[window.padding]
-x = 7
-y = 7
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ''',│`|:"' ()[]{}<>	'''
 
