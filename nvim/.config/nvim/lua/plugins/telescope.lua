@@ -10,6 +10,11 @@ return {
 			layout_config = {
 				preview_cutoff = 0.4,
 			},
+			file_ignore_patterns = {
+				"%.class",
+				"^bin/",
+				"^docs/",
+			},
 		},
 	},
 }
