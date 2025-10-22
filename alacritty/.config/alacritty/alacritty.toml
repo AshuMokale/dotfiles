@@ -1,5 +1,6 @@
-[general]
+# [general]
 import = ["~/.config/alacritty/dracula.toml"]
+# import = ["~/.config/alacritty/gruvbox.toml"]
 
 [window]
 decorations = "none"
@@ -9,7 +10,7 @@ dynamic_padding = true
 
 
 [font]
-size = 18.0
+size = 18
 
 [font.bold]
 style = "Bold"
