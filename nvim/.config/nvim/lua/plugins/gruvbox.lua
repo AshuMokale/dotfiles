@@ -5,7 +5,7 @@ return {
 	opts = {
 		terminal_colors = true,
 	},
-	config = function()
-		vim.cmd("colorscheme gruvbox")
-	end,
+	-- config = function()
+	-- 	vim.cmd("colorscheme gruvbox")
+	-- end,
 }
