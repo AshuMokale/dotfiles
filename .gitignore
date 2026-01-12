@@ -1,2 +1,6 @@
 *.log
 lazy-lock.json
+'Installed Packages/'
+Lib
+Local
+Log
