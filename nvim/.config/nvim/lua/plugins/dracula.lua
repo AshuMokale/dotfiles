@@ -6,6 +6,6 @@ return {
 		terminal_colors = true,
 	},
 	config = function()
-		vim.cmd("colorscheme dracula")
+		-- vim.cmd("colorscheme dracula")
 	end,
 }

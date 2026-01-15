@@ -3,7 +3,7 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	opts = {
 		options = {
-			theme = "dracula",
+			theme = "everforest",
 		},
 		sections = {
 			lualine_x = { "filetype" },
