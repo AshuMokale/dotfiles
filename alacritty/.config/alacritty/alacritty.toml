@@ -1,6 +1,5 @@
 [general]
-# import = ["~/.config/alacritty/dracula.toml"]
-import = ["~/.config/alacritty/everforest.toml"]
+import = ["~/.config/alacritty/dracula.toml"]
 
 [window]
 decorations = "none"
